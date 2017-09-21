@@ -1,0 +1,7 @@
+<div class="card road-card" [style.borderBottomColor]="road.category" (click)="select()">
+  <img class="card-img-top" src="http://placehold.it/320x240" alt="Road cover">
+  <div class="card-road">
+    <h4 class="card-title" [class.active]="isSelected">{{ road.klasaDrogi}}</h4>
+    <p class="card-text" [ngStyle]="materialNawierzchniStyle">{{ road.materialNawierzchni }}</p>
+  </div>
+</div>
