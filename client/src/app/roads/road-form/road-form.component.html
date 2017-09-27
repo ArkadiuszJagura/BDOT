@@ -1,0 +1,25 @@
+<div class="card road-form-card">
+  <div class="card-header text-center">Road</div>
+  <div class="road-form">
+    <div class="form-group">
+      <label>Klasa drogi:</label>
+      <input type="text" class="form-control" [(ngModel)]="road.klasaDrogi">
+    </div>
+    <div class="form-group">
+      <label>Materiał nawierzchni:</label>
+      <input type="text" class="form-control" [(ngModel)]="road.materialNawierzchni">
+    </div>
+    <div class="form-group">
+      <label>Category</label>
+      <input type="color" [(ngModel)]="road.category">
+    </div>
+    <div class="form-group">
+      <input type="checkbox" [(ngModel)]="road.favourite">
+      <label>Favourite</label>
+    </div>
+    <div class="form-group">
+      <button class="btn" (click)="onCancel.emit()">Cancel</button>
+      <button class="btn btn-success" (click)="onSave.emit(road)">Save</button>
+    </div>
+  </div>
+</div>
